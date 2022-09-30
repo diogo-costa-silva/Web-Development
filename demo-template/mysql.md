@@ -1,5 +1,10 @@
 
 ## config MySQL connection to VSCode:
+https://www.geeksforgeeks.org/how-to-connect-to-mysql-server-using-vs-code-and-fix-errors/
+
+
+mysql --version
+
 
 mysql -u root -p
 
