@@ -1,2 +1,4 @@
 .DS_Store
 .vscode/settings.json
+demo-template/conexao-mysql-1.session.sql
+demo-template/.vscode/settings.json
