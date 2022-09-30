@@ -1,0 +1,156 @@
+body {
+    background: yellow;     /* red, blue, yellow, etc; ex: #1B4513*/
+    color: red;             /* red, blue, yellow, etc */
+    font-size: 20px;        /* 0px - 100px and beyond */
+    font-weight: lighter;   /* lighter, normal, bold  */
+    text-align: left;      /* left, center or right  */ 
+    margin-top: 5px;        /* From 0px and upwards   */
+}
+
+/* WIDTH */
+/* margin-top*/
+/* margin-bottom*/
+
+
+img {
+    margin-top: 40px;
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 400px;
+}
+
+/* Inline vs Block 
+
+img {
+    display: inline;
+    display: block;
+}
+*/
+
+/*DIVS RULE THE WORLD */
+div {
+    margin-top: 100px;
+}
+
+
+/* CSS CLASSES */
+.main {
+    margin-top: 100px;
+}
+
+/* Challenge - part 2: 
+Replace the element selectors with class selectors */
+.logo-img {
+    display: block;
+    width: 300px;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+}
+
+
+/* Centering with margins */
+.centered {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+/* PADDING */
+.card {
+    color: #222222;
+    background: lightgray;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /*
+    Challenge:
+    Add padding to make our card look like
+    the provided design */
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+/* Border and Border Radius */
+
+.card {
+    color: #222222;
+    background: lightgray;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 2px solid red;
+    border-radius: 20px;
+    
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+
+/* TWITTER BUTTON*/
+button {
+    color: #0f1419;
+    border: 1px solid #cfd9de;
+    border-radius: 20px;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+/* Justify the items */
+.card {
+    padding: 20px;
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+/* Margin and Padding shorthand - pensa na bandeira do japão: top, right, bottom, left */
+.card {
+    margin: 0 auto; /* top/bottom left/right*/
+}
+
+/* Background Image */
+body {
+    color: white;
+    background-image: url("images/universe.jpg");
+    background-size: cover;
+}
+
+/* @font-face - to deal with ttf files */
+@font-face {
+    src: url("Corleone.ttf");
+    font-family: Corleone;
+}
+
+h1 {
+    font-family: Corleone;
+}
+
+
+/* Spans */
+.cta {
+    border: 2px solid #A3BC71;
+    padding: 5px 10px;
+    background: #8F4737;
+}
+
+
