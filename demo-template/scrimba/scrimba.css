@@ -201,12 +201,34 @@ div2 {
     justify-content: start;
     align-items: center;
 
-
-
 }
 
 
 
+/* flex-direction muda o eixo do x e do y com justify-content e align-items */
+.container {
+    border: 8px solid #016a26;
+    height: 360px;
 
+    /*
+    justify-content:
+    start, center, end, space-around, 
+    space-evenly, space-between
+    
+    align-items:
+    start, center, end
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+
+
+/* hover */
+div:hover {
+    background-image: url("eyes.jpg");
+}
 
 
