@@ -2,12 +2,11 @@
 // Create the map
 let myMap = L.map("map").setView([41.558697, -8.397743], 3);
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
     // Attribution is obligatory as per copyright!
-	maxZoom: 20
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(myMap);
-
 
 
 
@@ -20,6 +19,7 @@ let cpt_marker = L.marker([-33.909396, 18.418033]).addTo(myMap);
 // Vigo, Spain
 let vgo_marker = L.marker([42.239932, -8.717004]).addTo(myMap);
 // London, England
+let lon_marker = L.marker([51.49992826360607, -0.12151727199458447]).addTo(myMap);
 
 // Munich, Germany
 
@@ -75,8 +75,29 @@ let geres = L.polygon([
 
 // Popups
 
-bud_marker.bindPopup("<b>BUD</b>");
-cpt_marker.bindPopup("<b>CPT</b>");
-vgo_marker.bindPopup("<b>VGO</b>");
+//for cities
+bud_marker.bindPopup("<b>Budapest, Hungary</b><br>The Queen of the Danube");
+cpt_marker.bindPopup("<b>Cape Town, South Africa</b><br>");
+vgo_marker.bindPopup("<b>Vigo, Spain</b><br>The working city of Galicia!");
+lon_marker.bindPopup("<b>London, England</b><br>The center of the world!");
+
+//for locations
 wembley_stadium.bindPopup("<b>Wembley Stadium</b>");
 geres.bindPopup("<b>Geres</b>");
+
+
+
+
+
+
+
+
+// how to use an alert
+
+/*
+function onMapClick(e) {
+    alert("The coordenates of this place are " + e.latlng);
+    // alert("You clicked the map at " + e.latlng);
+}
+
+myMap.on('click', onMapClick); */
