@@ -1,0 +1,22 @@
+SERVER:
+
+sacar código básico para o backend
+
+npm install
+
+npm i mongoose -s
+
+npm install --save bcrypt
+
+npm i jsonwebtoken -s
+
+
+
+nodemon app
+
+
+
+
+
+
+CLIENT:
