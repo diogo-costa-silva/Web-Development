@@ -103,3 +103,32 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const navLinks = document.querySelectorAll('.navbar-link');
+  const navToggle = document.querySelector('.navbar');
+  const navButton = document.querySelector('.nav-toggle-btn');  // Replace with the actual class or id of your nav button
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+
+      // Remove the active class to hide the menu
+      navToggle.classList.remove('active');
+
+      // Toggle button state
+      if (navButton.classList.contains('active')) {
+        navButton.classList.remove('active');
+      }
+    });
+  });
+});
+
